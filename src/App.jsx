@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+      const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1010');
       const data = await res.json();
       const detailed = await Promise.all(
         data.results.map(async (p) => {
